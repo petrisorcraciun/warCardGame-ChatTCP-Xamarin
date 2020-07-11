@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "2Ej6kWN0TtDIcXpMH8Oip3R4Zd5NEh/AKPotU3gvzXJb4M8JQ4xqSlkA2g6k5MnJ9HxUQ/Wfw3sIeLmSFO+O1w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\petri\\Desktop\\cardGameX\\cardGameX\\cardGameX.iOS\\cardGameX.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\petri\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+  ],
+  "logs": []
+}

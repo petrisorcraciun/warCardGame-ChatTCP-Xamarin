@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="cardGameX.Rules"
+             Title="Rules">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10"  VerticalOptions="CenterAndExpand">
+                
+                <Label Text="Pentru început se vor împărţi cărţile de joc participanţilor. Apoi fiecare jucător îşi va lua cărţile şi le va aşeza într-un teanc, cu faţa în jos." HorizontalOptions="CenterAndExpand" />
+                <Label Text="În fiecare rundă toţi jucătorii vor lua cartea cea mai de sus din teancul propriu şi o va aşeza pe masa, cu faţa în sus. Jucătorul a cărui carte are valoarea cea mai mare câştigă toate cărţile de pe masă pe care le va lua şi le va adăuga în teancul său de cărţi, desesubt. Valoarea cărţilor este dată de cifra afişată pe ele. Singura menţiune este că asul (cartea cu numărul 1) se consideră cea mai mare dintre toate. Dacă, în cărţile aşezate pe masă, există 2 sau mai multe cărţi cu aceaşi valoare, se va declanşa război." HorizontalOptions="CenterAndExpand" />
+                <Label Text="Şi anume jucătorii care au pus cărţile cu aceasi valoare vor pune pe masă atâtea cărţi cât este valoarea afişată pe carte (spre exemplu dacă este vorba de cartea cu numărul 7 vor pune pe masă câte 7 cărţi)." HorizontalOptions="CenterAndExpand" />
+                <Label Text="Restul jucătorilor sunt obligaţi să lase cărţile pe masă, chiar dacă poate au pus o carte cu o valoare mai mare decât cele care participă la război. După ce jucătorii care participă la război au pus numărul de cărţi necesare jos cel care are ultima carte cea mai mare va lua toate cărţile de pe masă. Dacă ultima carte este de aceaşi valoare la mai mulţi jucători aceştia vor porni un nou război urmând regulile de mai sus." HorizontalOptions="CenterAndExpand" />
+                <Label Text="În cazul în care un jucător trebuie să participe la război însă nu mai are numărul de cărţi indicat va participa la război punând toate cărţile pe care le are. Restul jucătorilor vor pune număr necesar de cărţi." HorizontalOptions="CenterAndExpand" />
+
+                
+                
+            
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

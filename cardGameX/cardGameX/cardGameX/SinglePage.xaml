@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="cardGameX.SinglePage"
+             Title="VERSUS AI"
+             BackgroundImage="https://img.fabricgateway.com/66/66b2b5ad5874d6f927380a7c0ed63642.jpeg">
+    
+<ContentPage.Content>
+
+        <StackLayout VerticalOptions="Center" Margin="20">
+            <RelativeLayout>
+            <!-- requires x:Name so we can reference in RelativeToView on Green box -->
+
+                <Image x:Name ="backCardAndroid" Source="https://petrisor.ml/WarCardGame/project/warCardGUI/images/backCard.png" WidthRequest="150"
+                   
+                RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=0}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=0}"  />
+
+
+
+                <Image x:Name = "cardAndroid" Source="https://petrisor.ml/WarCardGame/project/warCardGUI/images/backCard.png" WidthRequest="150"
+                   
+                RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=35}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=10}"  />
+
+
+                <Image x:Name ="backCardPlayer" Source="https://petrisor.ml/WarCardGame/project/warCardGUI/images/backCard.png" WidthRequest="150"
+                   
+                RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=180}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=340}"  />
+
+
+
+                <Image x:Name ="cardPlayer" Source="https://petrisor.ml/WarCardGame/project/warCardGUI/images/backCard.png" HeightRequest="250" WidthRequest="150" RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=160}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=310}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped"
+                NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Text="Carti ramase:" HorizontalOptions="CenterAndExpand" FontFamily = "Lobster" FontSize="20" TextColor="White"
+                       
+                       RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=200}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=50}"
+                       />
+
+                <Label x:Name ="cardsAndroid" Text="0" HorizontalOptions="CenterAndExpand" FontFamily = "Lobster" FontSize="40" TextColor="White"
+                       
+                       RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=270}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=70}"
+                       />
+
+
+
+                
+
+                <Label x:Name ="cardsPlayer" Text="0" HorizontalOptions="CenterAndExpand" FontFamily = "Lobster" FontSize="40" TextColor="White"
+                       
+                       RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=85}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=400}"
+                       />
+                
+                
+                <Label Text="Carti ramase:" HorizontalOptions="CenterAndExpand" FontFamily = "Lobster" FontSize="20" TextColor="White"
+                       
+                       RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=10}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=370}"
+                       />
+
+                <Label x:Name ="winnerTxt" Text="" HorizontalOptions="CenterAndExpand" FontFamily = "Lobster" FontSize="40" TextColor="White"
+                       
+                       RelativeLayout.XConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=100}"
+             RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=Constant, 
+                                        Constant=250}"
+                       />
+
+
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

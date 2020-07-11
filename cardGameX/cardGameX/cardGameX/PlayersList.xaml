@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="cardGameX.PlayersList"
+             Title="Waiting room">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="0">
+
+            <Button x:Name="startGame" Text="START GAME" Clicked="startGame_Clicked" Margin="20,20,20,0"/>
+
+            <Button x:Name="closeGame" Text="STOP GAME" Clicked="closeGame_Clicked" Margin="20,0,20,0"/>
+
+        
+            
+
+            <Label x:Name="listPlayers" Text="." HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+
+            <ListView x:Name="listView" VerticalOptions="Start" HorizontalOptions="Start" Margin="0" HeightRequest="450"
+			    
+			    ItemsSource="{Binding .}" />
+
+            
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Margin="10">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="messagePlayer" Placeholder="Nume" WidthRequest="200"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Picker x:Name="emojiList" Grid.Row="0" Title="&#x1F602;" HorizontalOptions="Center" WidthRequest="40"  Opacity="1" SelectedIndexChanged="emojiList_SelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>&#x1F602;</x:String>
+                            <x:String>&#x1F970;</x:String>
+                            <x:String>&#x1F634;</x:String>
+                            <x:String>&#x1F621;</x:String>
+                            <x:String>&#x1F911;</x:String>
+                            <x:String>&#x1F644;</x:String>
+                            <x:String>&#x1F92B;</x:String>
+                            <x:String>&#x1F60E;</x:String>
+
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Button x:Name="newMessage" Text="SEND" Clicked="newMessage_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
